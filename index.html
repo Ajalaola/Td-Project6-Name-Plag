@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Name Plaque App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Name Plaque Application</h1>
+        <p> Add any name of your choice, and we will show you how much it will cost. (Each letter is $5)</p>
+
+        <label for="nameInput">Enter Name:</label>
+        <input type="text" id="nameInput" placeholder="Type a name...">
+
+        <div id="displayContainer">
+            <div id="nameDisplay" class="flex-item">
+                <!-- Display added names here -->
+            </div>
+            
+            <div id="checkoutContainer" class="flex-item">
+                <div id="totalPrice">Total: $0</div>
+                <button onclick="checkout()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
